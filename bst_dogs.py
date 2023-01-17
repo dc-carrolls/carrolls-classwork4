@@ -5,7 +5,6 @@ class BSTree:
     def root(self):
         return self._root
 
-
 class Node:
     def __init__(self, breed):
         self._breed = breed
@@ -42,31 +41,24 @@ class Node:
 
 
 def insert(root, value):
- 
-    # Create a new Node containing new value
     newnode = Node(value)
- 
-    # set current node (cn) too root
-    cn = root
- 
+    cn = root # Current Node (cn) set to root
     while (cn != None):
-        pn = cn
+        pn = cn # Set previous node equal to current node
         if (value < cn.getBreed()):
             cn = cn.getLeftNode()
         else:
             cn = cn.getRightNode()
- 
-    # If the new value is less than the leaf node value
-    # Assign the new node to be its left child
+        #end if
+    #end while
     if (value < pn.getBreed()):
         pn.setLeftNode(newnode)
-    # else assign the new node its
-    # right child
     else:
         pn.setRightNode(newnode) 
     # end if
+#end procedure
 
-def traverseBST(root,order=2):
+def traverseBST(root,order=2): # order=1 for pre-order, 2 for in-order 3 for post-order
     if order == 1: print(root.getBreed(), end=" ")
     if (root.getLeftNode() != None):
         traverseBST(root.getLeftNode())
@@ -77,12 +69,10 @@ def traverseBST(root,order=2):
 
 def main():
     breeds = ['Harrier','Greyhound','Rottweiler','Chihuaha','Pug','Whippet','Doberman','Dalmatian']
-    tree = BSTree(Node(breeds[0]))
-    print(tree.root())
+    tree = BSTree(Node(breeds[0])) # Create tree with root node
     for breed in breeds[1:]:
-        insert(tree.root(),breed)
-    print(tree.root())
-    traverseBST(tree.root())
+        insert(tree.root(),breed) # Insert rest of nodes into tree
+    traverseBST(tree.root()) # Output Tree (in-order)
     print("\nStart...")
     name = input("Enter the name of a breed:")
     breedNode = tree.root()
