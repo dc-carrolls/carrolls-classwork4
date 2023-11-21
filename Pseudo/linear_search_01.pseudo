@@ -1,0 +1,10 @@
+function linearSearch(arr, item) do
+    returnValue = -1
+    for index = 0 to arr.length - 1 do
+        if arr[index] == item do
+            returnValue = index
+        end
+    end
+    return returnValue
+end
+    

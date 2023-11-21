@@ -1,0 +1,15 @@
+function binarySearch(arr, item) do
+    lower = 0
+    upper = arr.length - 1
+    while lower <= upper do
+        mid = (lower + upper) DIV 2
+        if arr[mid] == item do
+            return mid
+        end else if arr[mid] < item do
+            lower = mid + 1
+        end else do
+            upper = upper - 1
+        end
+    end
+    return -1
+end

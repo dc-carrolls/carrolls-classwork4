@@ -1,0 +1,11 @@
+function linearSearch(arr, item) do
+    index = 0
+    while index < arr.length and arr[index] != item do
+        index = index + 1
+    end
+    if index == arr.length do
+        return -1
+    end 
+    return index
+end
+    
