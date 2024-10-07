@@ -1,0 +1,1 @@
+print((lambda a,b,c:(a+b+c)/3)(*[float(input("Enter grade" + str(z + 1) + ":")) for z in range(3)]))

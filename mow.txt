@@ -1,0 +1,29 @@
+One man went to mow
+Went to mow a meadow;
+One man and his dog, Spot
+Went to mow a meadow
+
+Two men went to mow
+Went to mow a meadow;
+Two men, one man and his dog, Spot
+Went to mow a meadow
+
+Three men went to mow
+Went to mow a meadow;
+Three men, two men, one man and his dog, Spot
+Went to mow a meadow
+
+Four men went to mow
+Went to mow a meadow;
+Four men, three men, two men, one man and his dog, Spot
+Went to mow a meadow
+
+Five men went to mow
+Went to mow a meadow;
+Five men, four men, three men, two men, one man and his dog, Spot
+Went to mow a meadow
+
+
+
+
+
