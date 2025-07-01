@@ -1,5 +1,6 @@
 gnames = ["Amelia","Olivia","Isla","Emily","Poppy", "Ava","Isabella","Jessica","Lily","Sophie"]
 gnums = [1000,3000,4000,3240,5690,9901,2345,3241,3123,4321]
+
 def linear_search(list,item):
     i = 0
     while i < len(list):
